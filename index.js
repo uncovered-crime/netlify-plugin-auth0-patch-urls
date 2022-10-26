@@ -10,10 +10,10 @@ module.exports = {
     console.log(`🔑 Auth0 Plugin startup`);
     const tab = "   ";
     const requiredEnvVariables = [
-      "AUTH0_DOMAIN",
+      "AUTH0_MGMT_DOMAIN",
       "AUTH0_CLIENT_ID",
-      "AUTH0_MANAGEMENT_CLIENT_ID",
-      "AUTH0_MANAGEMENT_CLIENT_SECRET",
+      "AUTH0_MGMT_CLIENT_ID",
+      "AUTH0_MGMT_CLIENT_SECRET",
     ];
     const missingEnvVariables = requiredEnvVariables.filter(
       (envVar) => typeof process.env[envVar] === "undefined"
